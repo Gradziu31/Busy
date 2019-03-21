@@ -1,0 +1,24 @@
+/* stylelint-disable */
+
+.trusted {
+    img {
+        max-width: 95%;
+        max-height: 100%;
+        height: auto;
+        transition: 300ms;
+    }
+    .single-logo {
+        height: 150px;
+        border: 1px solid #dddddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        overflow: hidden;
+        &:hover {
+           img {
+             transform: scale(1.1);
+           }
+        }
+    }
+}

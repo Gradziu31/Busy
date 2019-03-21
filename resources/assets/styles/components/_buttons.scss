@@ -1,0 +1,94 @@
+/* stylelint-disable */
+button, input {
+  outline: none!important;
+  :focus, :active {
+    outline: none!important;
+  }
+}
+
+a.button,
+.button {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  color: $white;
+  text-transform: uppercase;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 900;
+  padding: 12px 75px;
+  :focus, :active {
+    outline: none!important;
+  }
+}
+
+a.button--orange, .button--orange {
+  background: $orange;
+  border-radius: 100px;
+  outline: none!important;
+  &:hover,{
+    background: $white;
+    color: $orange;
+  }
+}
+
+a.button--lightorange, .button--lightorange {
+  background: $white;
+  border-radius: 100px;
+  outline: none!important;
+  border: 3px solid $orange;
+  color: $orange;
+  &:hover,{
+    background: $orange;
+    color: $white;
+  }
+}
+
+a.button--gray, .button--gray {
+    background: $gray;
+    border-radius: 100px;
+    &:hover,{
+      background: $white;
+      color: $orange;
+    }
+  }
+
+.s1 {
+  padding: 3px 30px 1px !important;
+  font-size: 16px;
+}
+
+.checkbox {
+  .wpcf7-list-item {
+    margin: 0;
+    label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      input[type=checkbox] {
+        -webkit-appearance: none;
+        background-color: $white;
+        border: 1px solid #dddddd;
+        display: inline-block;
+        position: relative;
+        margin: 0 10px 0 0;
+        width: 18px;
+        height: 18px;
+        &:checked:after {
+          content: ' ';
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          top: 3px;
+          background: $orange;
+          left: 3px;
+        }
+      }
+    }
+  }
+}

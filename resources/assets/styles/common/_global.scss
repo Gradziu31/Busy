@@ -1,0 +1,52 @@
+/* stylelint-disable */
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    @media (max-width: 576px) {
+      font-size: 14px;
+    }
+    @media (min-width: 576px) and (max-width: 767px) {
+      font-size: 13px;
+    }
+    @media (min-width: 767px) and (max-width: 991px) {
+      font-size: 14px;
+    }
+    @media (min-width: 992px) {
+      font-size: 14px;
+    }
+    @media (min-width: 1140px) {
+      font-size: 16px;
+    }
+}
+h1 {
+    font-size: 3.7em;
+}
+
+h2 {
+    font-size: 3.1em;
+    font-weight: 600;
+    padding: 55px 0 30px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6, p, button {
+  font-family: 'Rajdhani', sans-serif;
+}
+div {
+  font-family: 'Open Sans', sans-serif;
+}
+//regular 400
+//semi-bold 600
+//bold 700
+
+.space-content {
+  margin-bottom: 70px;
+}
+.italic {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}

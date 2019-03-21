@@ -1,0 +1,41 @@
+/* stylelint-disable */
+.faq-page {
+    background-image: none;
+    &:before {
+        background-image: none;
+    }
+    ul {
+        padding: 0;
+        .mt-2 {
+            z-index: 999;
+        }
+        .arrow {
+            &:before {
+                background: $orange-dark!important;
+                left: 0px;
+                color: $white;
+                z-index: 9;
+            }
+            li {
+                background-color: $orange!important;
+                padding-left: 65px!important;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+        }
+        .arrow[aria-expanded="true"] li {
+            background: $dark-gray!important;
+          }
+        .arrow[aria-expanded="true"] {
+            &:before {
+                background: #282828!important;
+                color: $orange;
+                content: '\f106';
+            }
+        }
+        .grayback {
+            z-index: 20;
+            background-color: #e8e8e8;
+        }
+    }
+}
